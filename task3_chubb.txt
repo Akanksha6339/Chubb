@@ -1,0 +1,201 @@
+ show dbs;
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+> use mongo_training;
+switched to db mongo_training
+> db.users.insertOne({username:"Akanksha Mishra",emailid:"akankshamishra@gmail.com",designation:"intern",userid:100});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("61394e2b0b3cbcfcc3e68d93")
+}
+> db.users.insertOne({username:"Smaraki Priya",emailid:"smarakipriya@gmail.com",designation:"intern"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("61394ec70b3cbcfcc3e68d94")
+}
+> db.users.insertOne({username:"Alok Nath",emailid:"aloknath@gmail.com",designation:"intern"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("61394f040b3cbcfcc3e68d95")
+}
+> db.users.insertOne({username:"Rashmi Das",emailid:"rashmidas@gmail.com",designation:"intern"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("61394f680b3cbcfcc3e68d96")
+}
+> db.users.insertOne({username:"Agastya Dash",emailid:"agastyadash@gmail.com",designation:"intern"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("61394f9f0b3cbcfcc3e68d97")
+}
+> db.users.insertOne({username:"Raj Hota",emailid:"rajhota@gmail.com",designation:"mentor"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613950640b3cbcfcc3e68d98")
+}
+> db.users.insertOne({username:"Rajesh Dash",emailid:"rajeshdash@gmail.com",designation:"mentor"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6139509a0b3cbcfcc3e68d99")
+}
+> db.users.insertOne({username:"Ankita Singh",emailid:"ankitasingh@gmail.com",designation:"mentor"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613950d20b3cbcfcc3e68d9a")
+}
+> db.users.insertOne({username:"Goyal Jain",emailid:"goyaljain@gmail.com",designation:"mentor"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613951050b3cbcfcc3e68d9b")
+}
+ db.codekata.insertOne({username:"Akanksha Mishra",emailid:"akankshamishra@gmail.com",noofquestions:20});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613951d60b3cbcfcc3e68d9c")
+}
+> db.codekata.insertOne({username:"Smaraki Priya",emailid:"smarakipriya@gmail.com",noofquestions:15});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613952050b3cbcfcc3e68d9d")
+}
+> db.codekata.insertOne({username:"Alok Nath",emailid:"aloknath@gmail.com",noofquestions:29});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613952370b3cbcfcc3e68d9e")
+}
+> db.codekata.insertOne({username:"Rashmi Das",emailid:"rashmidas@gmail.com",noofquestions:14});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613952650b3cbcfcc3e68d9f")
+}
+> db.codekata.insertOne({username:"Agastya Dash",emailid:"agastyadash@gmail.com",noofquestions:25});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613952940b3cbcfcc3e68da0")
+}
+db.attendance.insertOne({username:"Akanksha Mishra",emailid:"akankshamishra@gmail.com",classdate:"6th September",status:"present"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6139531c0b3cbcfcc3e68da1")
+}
+> db.attendance.insertOne({username:"Smaraki Priya",emailid:"smarakipriya@gmail.com",classdate:"7th September",status:"absent"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613953560b3cbcfcc3e68da2")
+}
+> db.attendance.insertOne({username:"Alok Nath",emailid:"aloknath@gmail.com",classdate:"6th September",status:"present"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6139538b0b3cbcfcc3e68da3")
+}
+> db.attendance.insertOne({username:"Rashmi Das",emailid:"rashmidas@gmail.com",classdate:"4th September",status:"present"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613953cb0b3cbcfcc3e68da4")
+}
+> db.attendance.insertOne({username:"Agastya Dash",emailid:"agastyadash@gmail.com",classdate:"7th September",status:"absent"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613954090b3cbcfcc3e68da5")
+}
+> db.topics.insertOne({topic_id:1,topic_name:"DBMS",course_id:200,course_name:"DotNet"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613954700b3cbcfcc3e68da6")
+}
+> db.topics.insertOne({topic_id:2,topic_name:"MongoDB",course_id:200,course_name:"DotNet"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613954a60b3cbcfcc3e68da7")
+}
+> db.topics.insertOne({topic_id:3,topic_name:"C#",course_id:201,course_name:"Json"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613954db0b3cbcfcc3e68da8")
+}
+> db.topics.insertOne({topic_id:4,topic_name:"NoSQL",course_id:201,course_name:"Json"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613955170b3cbcfcc3e68da9")
+}
+> db.topics.insertOne({topic_id:5,topic_name:"JDBC Connectivity",course_id:201,course_name:"Java"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613955540b3cbcfcc3e68daa")
+}
+> db.tasks.insertOne({taskdate:"5th September",status:"completed",username:"Akanksha Mishra"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613955cc0b3cbcfcc3e68dab")
+}
+> db.tasks.insertOne({taskdate:"5th September",status:"completed",username:"Smaraki Priya"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613955ff0b3cbcfcc3e68dac")
+}
+> db.tasks.insertOne({taskdate:"6th September",status:"incomplete",username:"Alok Nath"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6139565b0b3cbcfcc3e68dad")
+}
+> db.tasks.insertOne({taskdate:"7th September",status:"completed",username:"Agastya Dash"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6139568f0b3cbcfcc3e68dae")
+}
+> db.tasks.insertOne({taskdate:"6th September",status:"incomplete",username:"Rashmi Das"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613956bc0b3cbcfcc3e68daf")
+}
+> db.company_drives.insertOne({username:"Akanksha Mishra",companyname:"Chubb",drivedate:"16th October"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6139571f0b3cbcfcc3e68db0")
+}
+> db.company_drives.insertOne({username:"Smaraki Priya",companyname:"Wipro",drivedate:"17th December"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613957640b3cbcfcc3e68db1")
+}
+> db.company_drives.insertOne({username:"Alok Nath",companyname:"Infosys",drivedate:"18th June"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6139579a0b3cbcfcc3e68db2")
+}
+> db.company_drives.insertOne({username:"Rashmi Das",companyname:"Chubb",drivedate:"16th October"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613957cd0b3cbcfcc3e68db3")
+}
+> db.company_drives.insertOne({username:"Agastya Dash",companyname:"valuelabs",drivedate:"20th November"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613958260b3cbcfcc3e68db4")
+}
+> db.mentors.insertOne({username:"Raj Hota",studentname:"Akanksha Mishra",coursename:"Java"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6139587f0b3cbcfcc3e68db5")
+}
+> db.mentors.insertOne({username:"Kunal Mishra",studentname:"Smaraki Priya",coursename:"Json"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6139590b0b3cbcfcc3e68db6")
+}
+> db.mentors.insertOne({username:"Ankita Singh",studentname:"Alok Nath",coursename:"DotNet"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6139594d0b3cbcfcc3e68db7")
+}
+> db.mentors.insertOne({username:"Goyal Jain",studentname:"Ashish Dash",coursename:"Angular JS"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6139598a0b3cbcfcc3e68db8")
+}
+> db.mentors.insertOne({username:"Rani Singh",studentname:"Vudhish Jain",coursename:"Python"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("613959c70b3cbcfcc3e68db9")
+}
